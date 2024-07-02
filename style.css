@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    background-color: #5972DE;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    min-height: 100vh; /*vh:view height: 내가 보는 화면의 높이만큼  */
+
+}
+.task-area{
+    border:1px solid black;
+}
+
+.task-tabs{
+    display:flex;
+    border-bottom: 1px solid black ;
+    position:relative;
+}
+
+.task-tabs div{
+    padding: 1em;
+}
+
+#under-line{
+    height:4px;
+    background-color: #5972DE;
+    position:absolute;
+    width:60px;
+    left:0px;
+    top:50px;
+    padding:0px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding:1em;
+}
+
+.task-done{
+    text-decoration:line-through;
+}

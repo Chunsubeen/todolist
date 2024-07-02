@@ -39,6 +39,13 @@ body{
     padding:1em;
 }
 
+.task_true{
+    background-color: #eaebec;
+    display: flex;
+    justify-content: space-between;
+    padding:1em;
+}
+
 .task-done{
     text-decoration:line-through;
 }

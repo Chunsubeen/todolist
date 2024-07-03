@@ -32,16 +32,16 @@ function render() {
             resultHTML+=`<div class="task_true">
                     <div class="task-done">${taskList[i].taskContent}</div>
                     <div>
-                    <button onclick="toggleComplete('${taskList[i].id}')">CHECK</button>
-                    <button onclick="deleteTask('${taskList[i].id}')">DELETE</button>
+                    <button class="return_button" onclick="toggleComplete('${taskList[i].id}')"><i class="fa-solid fa-rotate-left"></i></button>
+                    <button class="delete_button" onclick="deleteTask('${taskList[i].id}')"><i class="fa-solid fa-trash"></i></button>
                     </div>
                 </div>`
         }else{
         resultHTML += `<div class="task">
                     <div>${taskList[i].taskContent}</div>
                     <div>
-                    <button onclick="toggleComplete('${taskList[i].id}')">CHECK</button>
-                    <button onclick="deleteTask('${taskList[i].id}')">DELETE</button>
+                    <button class="check_button" onclick="toggleComplete('${taskList[i].id}')"><i class="fa-solid fa-check"></i></button>
+                    <button class="delete_button" onclick="deleteTask('${taskList[i].id}')"><i class="fa-solid fa-trash"></i></button>
                     </div>
                 </div>`;
         }

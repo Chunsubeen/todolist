@@ -49,3 +49,23 @@ body{
 .task-done{
     text-decoration:line-through;
 }
+
+.return_button{
+    all:unset;
+    font-size: 1.2em;
+    color: #b6bfe9;
+    padding:0px 10px;
+}
+
+.delete_button{
+    all:unset;
+    font-size: 1.2em;
+    color: #5f6580;
+}
+
+.check_button{
+    all:unset;
+    font-size: 1.2em;
+    color: #5972DE;
+    padding:0px 10px;
+}

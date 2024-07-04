@@ -1,71 +1,116 @@
-body{
-    margin:0;
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
     background-color: #5972DE;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    min-height: 100vh; /*vh:view height: 내가 보는 화면의 높이만큼  */
-
-}
-.task-area{
-    border:1px solid black;
-}
-
-.task-tabs{
-    display:flex;
-    border-bottom: 1px solid black ;
-    position:relative;
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.task-tabs div{
-    padding: 1em;
-}
-
-#under-line{
-    height:4px;
-    background-color: #5972DE;
-    position:absolute;
-    width:60px;
-    left:0px;
-    top:46px;
-    padding:0px;
-}
-
-.task{
-    display: flex;
-    justify-content: space-between;
-    padding:1em;
-}
-
-.task_true{
-    background-color: #eaebec;
-    display: flex;
-    justify-content: space-between;
-    padding:1em;
-}
-
-.task-done{
-    text-decoration:line-through;
-}
-
-.return_button{
-    all:unset;
-    font-size: 1.2em;
-    color: #b6bfe9;
-    padding:0px 10px;
-}
-
-.delete_button{
-    all:unset;
-    font-size: 1.2em;
-    color: #5f6580;
-}
-
-.check_button{
-    all:unset;
-    font-size: 1.2em;
+h1 {
+    text-align: center;
     color: #5972DE;
-    padding:0px 10px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-area input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-area button {
+    width: 15%;
+    background-color: #5972DE;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #4a61c7;
+}
+
+.task-area {
+    margin-top: 20px;
+}
+
+.task-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.task-tabs div {
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+#under-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #5972DE;
+    transition: all 0.3s ease;
+}
+
+#all.active, #notdone.active, #done.active {
+    font-weight: bold;
+    color: #5972DE;
+}
+
+.task {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task_true {
+    background: #c5c5c5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-done {
+    text-decoration: line-through;
+    color: #999;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #5972DE;
 }

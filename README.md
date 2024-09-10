@@ -1,1 +1,1 @@
-d
+(https://subeentodolist.netlify.app/)

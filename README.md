@@ -9,7 +9,7 @@ demo:(https://subeentodolist.netlify.app/)
 - Clicking the delete button removes the task from the list.
 - Clicking the check button marks the task as completed with a strikethrough.
 - Completed tasks can be restored using a revert button.
-- Tasks can be filtered by their status using tabs (e.g., All, Active, Completed).
+- Tasks can be filtered by their status using tabs (e.g., All,NotDone, Done).
 
 ## Technologies Used
 - HTML
